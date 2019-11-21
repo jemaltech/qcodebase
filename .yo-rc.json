@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "qualitycodebase.com"
+    },
+    "jhipsterVersion": "6.5.0",
+    "applicationType": "monolith",
+    "baseName": "qcodebase",
+    "packageName": "qualitycodebase.com",
+    "packageFolder": "qualitycodebase/com",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZWMxM2ViZGY1MWQ3YjFmOGY0ZjEyYWE0ZWE5ZmIyOGM1ZDE0Nzg3OWI5MzU1MzJmYmE4N2UyNWRlMTBmMzQ1ZjY1Zjk5YmU4ODNiZGY0MTEzMWE4ZTMzMjZlNGU2NWU5MzJhNmVhNmJlMWI0MDQ2YjY4NmRlMzJkOTE4N2Q5NGI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": ["gatling", "cucumber"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
