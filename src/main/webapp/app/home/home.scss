@@ -1,23 +1,181 @@
 /* ==========================================================================
 Main page styles
-========================================================================== */
+========================================================================== 
 
 .hipster {
-  display: inline-block;
-  width: 347px;
-  height: 497px;
-  background: url('../../content/images/jhipster_family_member_3.svg') no-repeat center top;
-  background-size: contain;
+    display: inline-block;
+    width: 347px;
+    height: 497px;
+    background: url('../../content/images/jhipster_family_member_0.svg') no-repeat center top;
+    background-size: contain;
+}
+*/
+/* wait autoprefixer update to allow simple generation of high pixel density media query 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .hipster {
+        background: url('../../content/images/jhipster_family_member_0.svg') no-repeat center top;
+        background-size: contain;
+    }
 }
 
-/* wait autoprefixer update to allow simple generation of high pixel density media query */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (-moz-min-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  .hipster {
-    background: url('../../content/images/jhipster_family_member_3.svg') no-repeat center top;
-    background-size: contain;
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+  */
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '../../content/css/creative.css';
+// <!-- Google Fonts -->
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic');
+
+//Font Awesome Icons
+
+//Theme CSS - Includes Bootstrap
+//@import '../../../../../node_modules/startbootstrap-creative/css/creative.min.css';
+//Plugin CSS
+//@import '../../../../../node_modules/startbootstrap-creative/vendor/magnific-popup/magnific-popup.css';
+
+//Google Fonts
+//@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet');
+//@import url('https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic');
+
+/* our-trainings.component.scss */
+
+.btn .fa {
+  margin-left: 3px;
+}
+
+.top-nav-collapse {
+  background-color: #424f95 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #424f95 !important;
   }
 }
+
+.btn-white {
+  color: black !important;
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+.head-image {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+header .container {
+  padding-top: 10rem;
+  position: relative;
+  // background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header .overlay {
+  //padding-top: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.hd-align {
+  position: relative;
+}
+.rgba-gradient {
+  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+}
+
+// Section 1
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+// section 1 end

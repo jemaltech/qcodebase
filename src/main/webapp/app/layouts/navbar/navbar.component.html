@@ -1,7 +1,7 @@
-<nav class="navbar navbar-dark navbar-expand-md bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
     <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
         <span class="logo-img"></span>
-        <span class="navbar-title">Qcodebase</span> <span class="navbar-version">{{version}}</span>
+        <span class="navbar-title">QUALITYCODEBASE</span>
     </a>
     <a class="navbar-toggler d-lg-none" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
         <fa-icon icon="bars"></fa-icon>
@@ -14,6 +14,34 @@
                         <fa-icon icon="home"></fa-icon>
                         <span>Home</span>
                     </span>
+                </a>
+            </li>
+            
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="curriculum" (click)="collapseNavbar()">
+                    <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+                    <span>Curriculum</span>
+                </a>
+            </li>
+            
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="training-options" (click)="collapseNavbar()">
+                    <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+                    <span>Training options</span>
+                </a>
+            </li>
+            
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="services" (click)="collapseNavbar()">
+                    <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="about-us" (click)="collapseNavbar()">
+                    <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+                    <span>About us</span>
                 </a>
             </li>
             <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->

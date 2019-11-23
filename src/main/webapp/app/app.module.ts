@@ -7,6 +7,10 @@ import { QcodebaseCoreModule } from 'app/core/core.module';
 import { QcodebaseAppRoutingModule } from './app-routing.module';
 import { QcodebaseHomeModule } from './home/home.module';
 import { QcodebaseEntityModule } from './entities/entity.module';
+import { QcodebaseAppCurriculumModule } from './curriculum/curriculum.module';
+import { QcodebaseAppTrainingOptionsModule } from './training-options/training-options.module';
+import { QcodebaseAppServicesModule } from './services/services.module';
+import { QcodebaseAppAboutUsModule } from './about-us/about-us.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
@@ -20,6 +24,10 @@ import { ErrorComponent } from './layouts/error/error.component';
     QcodebaseSharedModule,
     QcodebaseCoreModule,
     QcodebaseHomeModule,
+    QcodebaseAppCurriculumModule,
+    QcodebaseAppTrainingOptionsModule,
+    QcodebaseAppServicesModule,
+    QcodebaseAppAboutUsModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     QcodebaseEntityModule,
     QcodebaseAppRoutingModule

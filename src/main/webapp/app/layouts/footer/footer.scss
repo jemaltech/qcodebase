@@ -1,0 +1,25 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+// <!-- Google Fonts -->
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic');
+//@import '../../../../../../startbootstrap-creative/css/creative.css';
+
+div a {
+  color: darkslateblue;
+}
+
+.footer-bg {
+  //padding-top: 3rem;
+  //padding-bottom: 3rem;
+  //background-color: #8fbc8f;
+  background: linear-gradient(90deg, rgb(148, 144, 128) 0%, #b4c0b4 35%, rgb(215, 231, 235) 100%);
+
+  //background: url('https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg') no-repeat center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  //bg-gradient-light
+  //background-color: cornflowerblue;
+}

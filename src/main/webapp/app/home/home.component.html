@@ -1,41 +1,152 @@
-<div class="row">
-    <div class="col-md-3">
-        <span class="hipster img-fluid rounded"></span>
-    </div>
-    <div class="col-md-9">
-        <h1 class="display-4">Welcome, Java Hipster!</h1>
-        <p class="lead">This is your homepage</p>
-
-        <div [ngSwitch]="isAuthenticated()">
-            <div class="alert alert-success" *ngSwitchCase="true">
-                <span id="home-logged-message" *ngIf="account"
-                   > You are logged in as user "{{account.login}}". </span>
+<header>
+  
+    <!-- Full Page Intro -->
+    <div class="view head-image">
+      <div class="h-100">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container h-100">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-6 h-100 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+              <h1 class="h1-responsive text-uppercase font-weight-bold mt-sm-5">Let us help you to achieving your success.</h1>
+              <hr class="hr-light">
+              <h6 class="mb-4">QualityCodeBase consulting companies in step up best testing practices and organizing trainings in Quality Assurance, Test Automation framework, and Application development.</h6>
+              
+              <a class="btn btn-primary js-scroll-trigger" href="mailto:info@qualitycodebase.com">Contact Us for further questions </a>
             </div>
-
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span>If you want to </span>
-                <a class="alert-link" (click)="login()">sign in</a><span>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").</span>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+              <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" alt="" class="img-fluid">
             </div>
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span>You don't have an account yet?</span>&nbsp;
-                <a class="alert-link" routerLink="account/register">Register a new account</a>
-            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
         </div>
-
-        <p>
-            If you have any question on JHipster:
-        </p>
-
-        <ul>
-            <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer">JHipster homepage</a></li>
-            <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener noreferrer">JHipster on Stack Overflow</a></li>
-            <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener noreferrer">JHipster bug tracker</a></li>
-            <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">JHipster public chat room</a></li>
-            <li><a href="https://twitter.com/jhipster" target="_blank" rel="noopener noreferrer">follow @jhipster on Twitter</a></li>
-        </ul>
-
-        <p>
-            <span>If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">GitHub</a>!
-        </p>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+      </div>
     </div>
+    <!-- Full Page Intro -->
+  </header>
+
+    <section>
+      <div class="container features">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title text-center">Quality Assurance</h3>
+            <img src="../../content/images/quality-assurance.png" class="img-fluid">
+            <p>QualityCodeBase offers a comprehensive skills-building curriculum for Software Testing and QA training.
+                Our curriculum teaches the critical skills necessary for beginners and all team members already involved in the testing and QA process including Testing/QA Professionals.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title text-center">Test Automation</h3>
+            <img src="../../content/images/automation-test.png" class="img-fluid">
+            <p>
+                This course is designed to teach you all the basics you need to get started with Selenium WebDriver Automation , 
+                scrafting automation framework from the scratch, Selenoum grid with docker, API automation using restAssured as well as automation on cloud based services.</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title text-center">SDET</h3>
+            <img src="../../content/images/SDET.jpeg" class="img-fluid">
+            <p> In this course you will get all the knowledge of Test Automation, and Advanced java programing, BDD Automation with Cucumber, Containerized automation and continous deployment and delivery.</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title text-center">DEVOPS</h3>
+            <img src="../../content/images/devops.jpg" class="img-fluid">
+            <p> This course is designed to cover
+                basics of DevOps
+                DevOps terminology, objectives, and principles,
+                DevOps culture and its business benefits,
+                Key DevOps practices (pipelines, tool chains, feedback loops, communicative skills)
+                Adopting DevOps practices successfully,
+                Scaling DevOps,
+                How DevOps works with popular methodologies and frameworks (such as Agile, Lean, etc.)
+                Integration of DevOps into the current workplace environment,
+                Case studies and real-life examples. and
+                Certified DevOps Professional Exam preparation.</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title text-center">AWS cloud</h3>
+            <img src="../../content/images/AWS-CLOUD.png" class="img-fluid">
+            <p> Is a special training cover most of cloud skills to help companies transform their business. AWS Training and Certification helps you build and validate your cloud skills so you can get more out of the cloud. 
+              Our content is built by experts at AWS and updated regularly to keep pace with AWS updates, so you can be sure you’re learning the latest and keeping your cloud skills fresh.
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title text-center">Implementing a CI/CD Pipeline</h3>
+            <img src="../../content/images/CICD.png" class="img-fluid">
+            <p>
+                A short special training and you will learn how to develop a fast, reliable and accurate CI/CD pipeline from the scratch.
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-12">    
+          </div>
+        </div>       
+    </section>
+
+<!-- Call to Action Section -->
+<section class="page-section bg-dark text-white">
+<div class="container text-center">
+  <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+  <a class="btn btn-light btn-xl" href="https://qualitycodebase.com">Download Now!</a>
 </div>
+</section>
+
+
+
+
+<!-- 
+
+<section class="page-section bg-service-section" id="services">
+  <div class="container">
+    <h2 class="text-center mt-0">Learn all in one place</h2>
+    <hr class="divider my-4">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+          <h3 class="h4 mb-2">Performance Testing</h3>
+          <p class="text-white-75 mb-0 text-left">
+              Sometimes called stress testing, this kind of QA software testing training allows you to assess how an application behaves when placed under different levels of demand. This course will teach you about stress testing concepts and 
+              tools that will help you be a successful quality assurance software tester.
+            </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <i class="fas fa-4x fa fa-lock text-primary mb-4"></i>
+          <h3 class="h4 mb-2">API Testing</h3>
+          <p class="text-white-75 mb-0 text-left">
+              As you get your quality assurance certification at A2A LEARNING we’ll teach you what a REST API is and how to create tests of performance functionality,reliability, safety and security using Postman and SOAP.
+           </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <i class="fas fa-4x fa fa-database text-primary mb-4"></i>
+          <h3 class="h4 mb-2">Database Testing</h3>
+          <p class="text-white-75 mb-0 text-left">
+              Database testing is one of the major testing which requires tester to expertise in checking tables writing queries and procedures.
+              Testing can be performed in web application or desktop and database can be used in the application like SQL or Oracle. 
+              There are many projects like banking,finance and health insurance which requires extensive database testing.
+            </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5">
+          <i class="fas fa-4x fa fa-laptop-code text-primary mb-4"></i>
+          <h3 class="h4 mb-2">GUI Testing</h3>
+          <p class="text-white-75 mb-0 text-left">
+              The GUI Test Automation Tool for all kinds of cross-platform desktop, mobile,embedded and web applications.
+              </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
