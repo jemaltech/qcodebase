@@ -11,6 +11,7 @@ import { QcodebaseAppCurriculumModule } from './curriculum/curriculum.module';
 import { QcodebaseAppTrainingOptionsModule } from './training-options/training-options.module';
 import { QcodebaseAppServicesModule } from './services/services.module';
 import { QcodebaseAppAboutUsModule } from './about-us/about-us.module';
+import { QcodebaseAppContactUsModule } from './contact-us/contact-us.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
@@ -28,6 +29,7 @@ import { ErrorComponent } from './layouts/error/error.component';
     QcodebaseAppTrainingOptionsModule,
     QcodebaseAppServicesModule,
     QcodebaseAppAboutUsModule,
+    QcodebaseAppContactUsModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     QcodebaseEntityModule,
     QcodebaseAppRoutingModule
