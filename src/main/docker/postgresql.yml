@@ -2,10 +2,10 @@ version: '2'
 services:
   qcodebase-postgresql:
     image: postgres:11.5
-    # volumes:
-    #     - ~/volumes/jhipster/qcodebase/postgresql/:/var/lib/postgresql/data/
+    volumes:
+      - ~/volumes/jhipster/qcodebase/postgresql/:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=qcodebase
-      - POSTGRES_PASSWORD=
+      - POSTGRES_PASSWORD=qcodebase
     ports:
       - 5432:5432

@@ -179,3 +179,35 @@ header .overlay {
   margin-bottom: 16px;
 }
 // section 1 end
+
+.hd-text {
+  color: antiquewhite;
+}
+
+.bg-service {
+  padding-top: 3rem;
+  //padding-bottom: calc(10rem - #{$navbar-height});
+  padding-bottom: 2p;
+  // replace the masthead.jpg image in the /img directory to change the image
+  // if the image name change, make sure to update the url path below!
+  background: linear-gradient(90deg, rgb(158, 132, 15) 0%, rgb(176, 190, 136) 35%, rgb(129, 169, 177) 100%),
+    url('../../content/images/quality-info.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.bg-service-section-gb {
+  padding-top: 3rem;
+  //padding-bottom: calc(10rem - #{$navbar-height});
+  padding-bottom: 2p;
+  // replace the masthead.jpg image in the /img directory to change the image
+  // if the image name change, make sure to update the url path below!
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, rgb(255, 255, 255) 100%),
+    url('../../content/images/quality-info.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
