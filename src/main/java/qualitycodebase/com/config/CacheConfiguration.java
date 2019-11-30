@@ -42,6 +42,7 @@ public class CacheConfiguration {
             createCache(cm, qualitycodebase.com.domain.User.class.getName());
             createCache(cm, qualitycodebase.com.domain.Authority.class.getName());
             createCache(cm, qualitycodebase.com.domain.User.class.getName() + ".authorities");
+            createCache(cm, qualitycodebase.com.domain.PaypalCompletedPayments.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

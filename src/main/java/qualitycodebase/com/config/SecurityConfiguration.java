@@ -3,8 +3,7 @@ package qualitycodebase.com.config;
 import qualitycodebase.com.security.*;
 import qualitycodebase.com.security.jwt.*;
 
-import org.springframework.beans.factory.BeanInitializationException;
-import org.springframework.beans.factory.InitializingBean;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpMethod;
