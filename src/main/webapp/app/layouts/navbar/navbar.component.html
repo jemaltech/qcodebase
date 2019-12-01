@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
     <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
         <span class="logo-img"></span>
-        <span class="navbar-title">QUALITYCODEBASE</span>
+        <span class="navbar-title hd-text">QUALITYCODEBASE</span>
     </a>
     <a class="navbar-toggler d-lg-none" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
         <fa-icon icon="bars"></fa-icon>
@@ -12,45 +12,52 @@
                 <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
                     <span>
                         <fa-icon icon="home"></fa-icon>
-                        <span>Home</span>
+                        <span>HOME</span>
                     </span>
                 </a>
             </li>
             
-            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+           <!--  <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="curriculum" (click)="collapseNavbar()">
                     <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
                     <span>Curriculum</span>
                 </a>
-            </li>
+            </li> -->
             
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="training-options" (click)="collapseNavbar()">
                     <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
-                    <span>Training options</span>
+                    <span>COURSES</span>
                 </a>
             </li>
             
-            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+           <!--  <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="services" (click)="collapseNavbar()">
                     <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
-                    <span>Services</span>
+                    <span>SERVICES</span>
                 </a>
-            </li>
+            </li> -->
             
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="about-us" (click)="collapseNavbar()">
                     <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
-                    <span>About us</span>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="account/register"  (click)="collapseNavbar()">
+                    <i class="fas fa-user-plus" aria-hidden="true"></i>
+                    <span>SIGN UP TODAY</span>
                 </a>
             </li>
             
-            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+           <!--  <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link" routerLink="contact-us" (click)="collapseNavbar()">
                     <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
                     <span>Contact us</span>
                 </a>
-            </li>
+            </li>-->
             <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
             <li *ngSwitchCase="true" ngbDropdown class="nav-item dropdown pointer" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu">
@@ -129,7 +136,7 @@
                   <span *ngIf="!getImageUrl()">
                     <fa-icon icon="user"></fa-icon>
                     <span>
-                      Account
+                      MY ACCOUNT
                     </span>
                   </span>
                   <span *ngIf="getImageUrl()">
