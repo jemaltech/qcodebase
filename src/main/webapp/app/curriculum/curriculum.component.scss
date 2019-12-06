@@ -1,39 +1,41 @@
-/* curriculum.component.scss */
-/* training-options.component.scss */
-/* our-trainings.component.scss */
-.hd-pading {
-  padding-top: 6rem;
-}
-.btn .fa {
-  margin-left: 3px;
+* {
+  box-sizing: border-box;
 }
 
-.top-nav-collapse {
-  background-color: #424f95 !important;
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
 }
 
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #424f95 !important;
-  }
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
-.btn-white {
-  color: black !important;
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
 }
 
-h6 {
-  line-height: 1.7;
-}
-
-.rgba-gradient {
-  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
-  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+#myBtn:hover {
+  background: #ddd;
+  color: black;
 }

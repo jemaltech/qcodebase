@@ -1,56 +1,31 @@
-<!-- Main navigation -->
-<header>
-  
-  <!-- Full Page Intro -->
-  <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-      <!-- Content -->
-      <div class="container">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
-            <h1 class="h1-responsive font-weight-bold mt-sm-5">Make purchases with our app </h1>
-            <hr class="hr-light">
-            <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt
-            dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae
-            iste.</h6>
-            <a class="btn btn-white">Download</a>
-            <a class="btn btn-outline-white">Learn more</a>
-          </div>
-          <!--Grid column-->
-          <!--Grid column-->
-          <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
-            <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" alt="" class="img-fluid">
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </div>
-      <!-- Content -->
-    </div>
-    <!-- Mask & flexbox options-->
-  </div>
-  <!-- Full Page Intro -->
-</header>
-<!-- Main navigation -->
-<!--Main Layout-->
-<main>
-  <div class="container">
-    <!--Grid row-->
-    <div class="row py-5">
-      <!--Grid column-->
-      <div class="col-md-12 text-center">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <!--Grid column-->
-    </div>
-    <!--Grid row-->
-  </div>
-</main>
-<!--Main Layout-->
+</head>
+<body>
 
-<script type="text/javascript" language="javascript">
-  new WOW().init();
+<video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Heading</h1>
+  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
 </script>
+
+</body>
+</html>

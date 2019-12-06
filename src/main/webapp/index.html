@@ -83,7 +83,23 @@
             }
         }
     </script>
-    <!-- uncomment this for adding service worker -->
+
+    <script type="text/javascript" language="javascript">
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+        </script>
+
+    <!-- uncomment this for adding service worker
         <script>
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function() {
@@ -93,7 +109,7 @@
                         });
                 });
             }
-        </script>
+        </script> -->
 
     <!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
     <script>
