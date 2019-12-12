@@ -73,7 +73,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: code2automate@gmail.com
-    password: Code2automate@2019
+    password: Code2Automate@2019
     protocol: smtp
     tls: true
     properties.mail.smtp:
