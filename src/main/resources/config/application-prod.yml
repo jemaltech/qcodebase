@@ -132,8 +132,8 @@ jhipster:
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
   mail: # specific JHipster mail property, for standard properties see MailProperties
-    from: app@qualitycodebase.com
-    base-url: https://www.qualitycodebase.com/ # Modify according to your server's URL
+    from: app@sheltered-stream-17056.herokuapp.com
+    base-url: http://sheltered-stream-17056.herokuapp.com/ # Modify according to your server's URL
   metrics:
     logs: # Reports metrics in the logs
       enabled: false
