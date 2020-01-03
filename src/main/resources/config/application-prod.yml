@@ -66,18 +66,16 @@ spring:
   liquibase:
     contexts: prod
   mail:
-    host: smtp.gmail.com
+    host: smtp.sendgrid.net
     port: 587
-    username: code2automate@gmail.com
-    password: Code2Automate@2019
+    username: ${SENDGRID_USERNAME}
+    password: ${SENDGRID_PASSWORD}
     protocol: smtp
     tls: true
     properties.mail.smtp:
       auth: true
       starttls.enable: true
-      ssl.trust: smtp.gmail.com
-  messages:
-    cache-duration: PT1S # 1 second, see the ISO 8601 standard
+      ssl.trust: smtp.sendgrid.net
   thymeleaf:
     cache: false
 
